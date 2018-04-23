@@ -1,24 +1,11 @@
-# README
+# shorten URL app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requires Ruby 2.5.1, rails 5.2 and docker with postgresql 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone `git clone git@github.com:javiermurillo/_shortener_url.git`
+2. In terminal go to `cd _shortener_url`
+3. `bundle install`
+4. `docker-compose up`
+5. In other terminal `rails db:setup`
+6. `rails s`
+7. Go to http://localhost:3000/
