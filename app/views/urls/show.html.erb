@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Link:</strong>
+  <strong>Input URL:</strong>
   <%= @url.link %>
 </p>
 
 <p>
-  <strong>Short:</strong>
-  <%= @url.short %>
+  <strong>Url Shortened:</strong>
+  <%= print_short(@url) %>
 </p>
 
-<%= link_to 'Edit', edit_url_path(@url) %> |
-<%= link_to 'Back', urls_path %>
+<%= render 'form', url: @new_url %>
